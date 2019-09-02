@@ -7,7 +7,7 @@
 
 ## 一、任务目标
 
-![任务目标](https://github.com/lespric/practise/blob/master/CSS-9/target.gif)
+![任务目标](https://github.com/lespric/practise/blob/master/task1-9boxs/target.gif)
 
 ## 二、任务难点
 
@@ -16,7 +16,7 @@
 
 ## 三、成果呈现
 
-![任务成果](https://github.com/lespric/practise/blob/master/CSS-9/result.gif)
+![任务成果](https://github.com/lespric/practise/blob/master/task1-9boxs/result.gif)
 
 ## 四、开发过程
 
