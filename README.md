@@ -2,7 +2,7 @@
 
 ## 注释：Markdown格式
 
-* [Markdown格式](https://blog.csdn.net/qq_27674439/article/details/93116914)
+* [Markdown格式](https://www.cnblogs.com/liugang-vip/p/6337580.html)
 * 在VSCode中，下载安装**markdownlint**插件，即可自动识别md格式文件的错误，以下划曲线表示，点击小黄灯泡可以弹出错误解释。
 
 ## 一、任务目标
