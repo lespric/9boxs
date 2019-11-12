@@ -3,6 +3,8 @@ var nineBoxs = {
   btnStart: document.getElementById("start"),
   btnEnd: document.getElementById("end"),
   // 获取document的Dom树中的box类名的元素节点，以及两个按钮的元素节点
+  bgColorChange: {},
+  // 声明一个定时器的对象
 
   colorRandom: function() {
     var thisColor = "#";
@@ -41,7 +43,7 @@ var nineBoxs = {
     for (i = 0; i < this.boxsList.length; i++) {
       this.boxsList[i].style.backgroundColor = "#ffa600";
     }
-  }
+  },
   // 声明颜色恢复的函数，多用length属性，防止数组越界而报错
 };
 // 创建一个全局对象，把该页面的变量和函数放在其中，以免与其他全局变量混合而影响调用
@@ -51,17 +53,11 @@ nineBoxs.btnStart.onclick = function() {
   nineBoxs.btnEnd.className = "end-flicker";
   // 点击后按钮变色，采用更改类名，来尽量给JS/CSS解耦
 
-  bgColorChange = setInterval(function() {
+  nineBoxs.bgColorChange = setInterval(function() {
     nineBoxs.boxRecover();
     nineBoxs.boxRandom();
   }, 1000);
   // 设置间歇调用，先恢复原本颜色，再应用随机颜色，确保重复调用时保证只有三个随机颜色；
-  // 由于没有用var声明，所以该变量是全局变量且不属于nineBoxs对象中，所以可以被其他函数内部访问
-
-//   this.getStop = (function() {
-//     return bgColorChange;
-//   })(); 
-  // 尝试使用特权方法访问私有变量，但只要是放在nineBoxs对象里面就无法彻底停止；
 };
 
 nineBoxs.btnEnd.onclick = function() {
@@ -69,7 +65,8 @@ nineBoxs.btnEnd.onclick = function() {
   nineBoxs.btnStart.className = "start-flicker";
   // 点击后按钮变色
 
-  clearInterval(bgColorChange);
+  clearInterval(nineBoxs.bgColorChange);
+  console.log(nineBoxs.bgColorChange);
   nineBoxs.boxRecover();
 };
 // 点击后取消间歇调用，并恢复原本颜色
