@@ -2,7 +2,7 @@
 
 ## 注释：Markdown格式
 
-* [Markdown格式](https://www.cnblogs.com/liugang-vip/p/6337580.html)
+* [Markdown格式](https://blog.csdn.net/qq_27674439/article/details/93116914)
 * 在VSCode中，下载安装**markdownlint**插件，即可自动识别md格式文件的错误，以下划曲线表示，点击小黄灯泡可以弹出错误解释。
 
 ## 一、任务目标
@@ -38,7 +38,7 @@ b. 实现[九宫格布局](https://blog.csdn.net/jnshu_it/article/details/866114
 * 缺点：由于浮动模型中各元素移动到碰到另一元素的边框或包含框就停止，若各元素的盒高度不同，就会出现错落不齐，如word的图片围绕效果；
 
 * 另一种是[弹性布局盒模型](www.ruanyifeng.com/blog/2015/07/flex-grammar.html)（**Flexible Box**）
-* 在CSS文件里，通过添加**display:flex**，来创建一个flex容器，其所有子元素都会变为容器成员（内联块状元素），实现各元素等比缩放的效果，甚至缩放时各元素的缩放比例都可以不同；
+* 在CSS文件里，通过添加**display:flex**，来创建一个flex容器，其所有子元素都变为容器成员（内联块状元素），实现各元素等比缩放的效果，甚至缩放时各元素的缩放比例都可以不同；
 * 缺点：部分较老的浏览器的兼容性不好，需要添加前缀；
 
 #### step3. 分析响应式布局设计的要点
