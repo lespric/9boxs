@@ -30,9 +30,9 @@ body {
    background-color: #fff;
    border: 0.1em solid #ffa600;
    border-radius: 0.5em;
+   cursor: pointer;
 }
 .btn-active {
-    cursor: pointer;
     color: #fff;
     background-color: #ffa600;
 }
